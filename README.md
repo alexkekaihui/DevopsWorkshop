@@ -62,7 +62,7 @@ DevopsWorkshop/
 Before setting up CI, run the tests on your own machine:
 
 ```bash
-python -m pytest tests/ -v
+python3 -m pytest tests/ -v
 ```
 
 **You should see output like this:**
@@ -127,7 +127,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-        run: python -m pytest tests/ -v
+        run: python3 -m pytest tests/ -v
 ```
 
 **Tasks:**
@@ -176,14 +176,14 @@ Time to fix the bug!
 <details>
 <summary>💡 Hint (click to reveal)</summary>
 
-The vowel string `"aei"` is missing `"o"` and `"u"`. It should be `"aeiou"`.
+The vowel string `"aeio"` is missing `"u"`. It should be `"aeiou"`.
 
 </details>
 
 5. Run the tests locally to confirm they all pass:
 
 ```bash
-python -m pytest tests/ -v
+python3 -m pytest tests/ -v
 ```
 
 6. Commit and push the fix:
@@ -244,12 +244,12 @@ Add a linting step to your workflow using `flake8`:
 
 ## Quick Reference
 
-| Command                      | What it does                      |
-| ---------------------------- | --------------------------------- |
-| `python -m pytest tests/ -v` | Run all tests with verbose output |
-| `git add <file>`             | Stage a file for commit           |
-| `git commit -m "message"`    | Create a commit                   |
-| `git push origin main`       | Push to GitHub                    |
-| `git checkout -b <branch>`   | Create and switch to a new branch |
+| Command                       | What it does                      |
+| ----------------------------- | --------------------------------- |
+| `python3 -m pytest tests/ -v` | Run all tests with verbose output |
+| `git add <file>`              | Stage a file for commit           |
+| `git commit -m "message"`     | Create a commit                   |
+| `git push origin main`        | Push to GitHub                    |
+| `git checkout -b <branch>`    | Create and switch to a new branch |
 
 ---

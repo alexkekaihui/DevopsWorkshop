@@ -8,7 +8,6 @@ def capitalize_words(s):
 
 def count_vowels(s):
     """Count the number of vowels in a string."""
-    # BUG: This is missing 'u' from the vowel list!
     return sum(1 for char in s.lower() if char in "aeio")
 
 
